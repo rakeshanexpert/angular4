@@ -1,0 +1,153 @@
+
+<!--big story chunk-->
+  <div class="businesstoday_outer_wrapper" >   
+    <div class="businesstoday_bigstory_chunk bt_marginbtm_main" *ngIf="homejsondata">
+      <div class="businesstoday_com_head">
+        <h2>Big Story</h2>
+        <a href="#" title="more">more &raquo;</a> </div>
+       
+      <div class="img_area" *ngFor="let data1 of homejsondata.bigStory | slice:0:1;"> 
+          <a href="{{data1.sef_url}}" title="{{data1.title}}"> 
+            <img src="http://media2.intoday.in/btmt/images/stories/{{data1.kicker_image}}" alt="" title=""> 
+          </a>
+          <h1><a href="{{data1.sef_url}}" title="{{data1.title}}">{{data1.introtext}}</a></h1>
+      </div>
+      <div class="businesstoday_com_thumb">
+        <ul>
+          <li *ngFor="let data1 of homejsondata.bigStory | slice:1:5;">
+            <div class="section">
+              <div class="img_area">
+                   <a href="#" title="">
+                      <img src="http://media2.intoday.in/btmt/images/stories/{{data1.medium_image}}"  alt="{{data1.title}}" title="{{data1.title}}">
+                   </a> 
+                </div>
+              <div class="text_area">
+                <p><a href="/story/{{getMyUrl(data1.sef_url,data1.id)}}" title="{{data1.title}}">{{data1.title}}</a></p>
+              </div>
+            </div>
+          </li>
+         
+        </ul>
+      
+     </div>
+    </div>
+
+    <div class="businesstoday_bigstory_chunk bt_marginbtm_main" *ngIf="homejsondata">
+      <div class="businesstoday_com_head">
+        <h2>Big Story</h2>
+        <a href="#" title="more">more &raquo;</a> </div>
+       
+      <div class="img_area" *ngFor="let data1 of homejsondata.photos | slice:0:1;"> 
+          <a href="{{data1.smallImage}}" title="{{data1.title}}"> 
+            <img src="http://media2.intoday.in/btmt/images/Photo_gallery/{{data1.thumb_image}}" alt="" title=""> 
+          </a>
+          <h1><a href="{{data1.sef_url}}" title="{{data1.title}}">{{data1.Gallery_name}}</a></h1>
+      </div>
+      <div class="businesstoday_com_thumb">
+        <ul>
+          <li *ngFor="let data1 of homejsondata.photos | slice:1:5;">
+            <div class="section">
+              <div class="img_area">
+                   <a href="#" title="">
+                      <img src="http://media2.intoday.in/btmt/images/Photo_gallery/{{data1.thumb_image}}"  alt="{{data1.Gallery_name}}" title="{{data1.Gallery_name}}">
+                   </a> 
+                </div>
+              <div class="text_area">
+                <p><a href="story/{{getMyUrl(data1.sef_url,data1.id)}}" title="{{data1.Gallery_name}}">{{data1.Gallery_name}}</a></p>
+              </div>
+            </div>
+          </li>
+         
+        </ul>
+      
+     </div>
+    </div>
+
+
+    
+    <div class="businesstoday_photos_chunk bt_marginbtm_main">
+      <div class="businesstoday_com_head">
+        <h2><a href="http://localhost:4200/photos">Photos</a></h2>
+        <a href="#" title="more">more &raquo;</a> </div>
+      <div class="businesstoday_photo"  id="photoSlide"> 
+        
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="outer_area"><a href="#" title="It's an imperfect GST, impact will
+take time to and reflect: Anand 
+Sharma"> <img src="http://media2.intoday.in/indiatoday/images/stories/kamal-haasan-video_305_070517060838.jpg" alt="" title=""><em></em> <strong>It's an imperfect GST, impact will
+                take time to and reflect: Anand 
+                Sharma</strong></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="outer_area"><a href="#" title="It's an imperfect GST, impact will
+take time to and reflect: Anand 
+Sharma"> <img src="http://media2.intoday.in/indiatoday/images/stories/kamal-haasan-video_305_070517060838.jpg" alt="" title=""><em></em> <strong>It's an imperfect GST, impact will
+                take time to and reflect: Anand 
+                Sharma</strong></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="outer_area"><a href="#" title="It's an imperfect GST, impact will
+take time to and reflect: Anand 
+Sharma"> <img src="http://media2.intoday.in/indiatoday/images/stories/kamal-haasan-video_305_070517060838.jpg" alt="" title=""><em></em> <strong>It's an imperfect GST, impact will
+                take time to and reflect: Anand 
+                Sharma</strong></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="outer_area"><a href="#" title="It's an imperfect GST, impact will
+take time to and reflect: Anand 
+Sharma"> <img src="http://media2.intoday.in/indiatoday/images/stories/kamal-haasan-video_305_070517060838.jpg" alt="" title=""><em></em> <strong>It's an imperfect GST, impact will
+                take time to and reflect: Anand 
+                Sharma</strong></a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="outer_area"><a href="#" title="It's an imperfect GST, impact will
+take time to and reflect: Anand 
+Sharma"> <img src="http://media2.intoday.in/indiatoday/images/stories/kamal-haasan-video_305_070517060838.jpg" alt="" title=""><em></em> <strong>It's an imperfect GST, impact will
+                take time to and reflect: Anand 
+                Sharma</strong></a></div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+
+   <div class="businesstoday_bigstory_chunk bt_marginbtm_main" *ngIf="homejsondata">
+      <div class="businesstoday_com_head">
+        <h2>Big Story</h2>
+        <a href="#" title="more">more &raquo;</a> </div>
+       
+      <div class="img_area" *ngFor="let data1 of homejsondata.topNews | slice:0:1;"> 
+          <a href="{{data1.sef_url}}" title="{{data1.title}}"> 
+            <img src="http://media2.intoday.in/btmt/images/stories/{{data1.medium_image}}" alt="" title=""> 
+          </a>
+          <h1><a href="{{data1.sef_url}}" title="{{data1.title}}">{{data1.title}}</a></h1>
+      </div>
+      <div class="businesstoday_com_thumb">
+        <ul>
+          <li *ngFor="let data1 of homejsondata.topNews | slice:1:5;">
+            <div class="section">
+              <div class="img_area">
+                   <a href="#" title="">
+                      <img src="http://media2.intoday.in/btmt/images/stories/{{data1.kicker_image}}"  alt="{{data1.Gallery_name}}" title="{{data1.Gallery_name}}">
+                   </a> 
+                </div>
+              <div class="text_area">
+                <p><a href="story/{{getMyUrl(data1.sef_url,data1.id)}}" title="{{data1.introtext}}">{{data1.introtext}}</a></p>
+              </div>
+            </div>
+          </li>
+         
+        </ul>
+      
+     </div>
+    </div>
+
+       
+  </div>

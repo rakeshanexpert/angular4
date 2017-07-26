@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');           
+/*RESET CSS*****/
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup,menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;
+}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q { quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+table { border-collapse: collapse;border-spacing: 0;}
+
+
+body{font-family: 'Open Sans', sans-serif;}
+.clearfix{clear:both;}                
+.displayToggle{display: block !important}
+.businesstoday_wap_wrapper{width: 100%;}             
+.businesstoday_header{width:100%;position: relative;}
+.businesstoday_header .bt_top_section{/*background:#430792;*/ background:#2e3192; padding:10px 2%; box-sizing: border-box; }
+.businesstoday_header .bt_top_section .logo-bt{display: inline-block;}
+.businesstoday_header .bt_top_section .logo-bt a{display: block;}
+.businesstoday_header .bt_top_section .hamburger{ display: inline-block;float: right; cursor: pointer;}
+.businesstoday_header .bt_top_section .bar1, .businesstoday_header .bt_top_section .bar2, .businesstoday_header .bt_top_section .bar3 {width: 35px;height: 5px;background-color: #fff;margin: 6px 0; transition: 0.4s;}
+.businesstoday_header .bt_top_section .change .bar1 {-webkit-transform: rotate(-45deg) translate(-8px, 6px) ;transform: rotate(-45deg) translate(-9px, 6px);}
+.businesstoday_header .bt_top_section .change .bar2 {opacity: 0;}
+.businesstoday_header .bt_top_section .change .bar3 {-webkit-transform: rotate(45deg) translate(-9px, -8px);transform: rotate(45deg) translate(-8px, -8px);}
+.businesstoday_navigation {margin-bottom: 32px;}
+.businesstoday_navigation .bt_nav_section{width:100%;  background: #111; }
+.businesstoday_navigation .bt_nav_section .swiper-slide{width:auto;}
+.businesstoday_navigation .bt_nav_section .swiper-slide a{color:#fff; text-decoration: none;display: block;padding:10px 10px 8px 10px; text-transform: uppercase;}
+.businesstoday_navigation .bt_nav_section .swiper-slide a.active_tab{ border-bottom: 3px #d00000 solid;}
+.businesstoday_footer{width:100%;}
+.businesstoday_footer .bt-footer{background:#E0E0E0; width: 100%;float: left;margin-top:32px;border-top:3px solid #c1c1c1;}
+.businesstoday_footer .bt-footer ul.bt-foot{float:left;}
+.businesstoday_footer .bt-footer ul.bt-foot li{text-transform:uppercase;padding:10px;box-sizing:border-box;width:50%;float:left;border-bottom:1px solid #ccc;}
+.businesstoday_footer .bt-footer ul.bt-foot li:nth-child(odd){border-right:1px solid #ccc;}
+.businesstoday_footer .bt-footer ul.bt-foot li a{text-decoration: none; color: #333;}
+.businesstoday_footer .bt-copyright{background: #000; color: #fff; font-size:13px;width:100%;float: left; }
+.businesstoday_footer .bt-copyright p{padding:10px; text-align: center;}    
+
+/**********************Dropdown Menu*******************/
+.bt-dropdown_nav_container{display:none;z-index:999;width:100%;background: #f1f1f1;box-shadow: 0 0 10px #848484; position: absolute;}
+.bt-dropdown_nav_container .bt-top_search_container{    box-sizing: border-box;padding: 10px 2% 15px 2%; background: #f5f5f5; box-shadow: 0 0 8px #2d2d2d; margin-bottom: 1px;}
+.bt-dropdown_nav_container .bt-top_search_container input.bt-search_text{width:80%;padding:8px 10px;border:1px solid #ccc;}
+.bt-dropdown_nav_container .bt-top_search_container .bt-btn_search{cursor:pointer;width:30px; height: 30px; background: url(http://media2.intoday.in/businesstoday/wap/2017/images/search-icon.png); border:0;background-size: 100% 100%; position: relative;top:10px;}
+
+.bt-dropdown_nav_container .bt-top_social_container{    background: #fff;
+    box-shadow: 0 0 3px #fffefe;border-bottom: 1px solid #ccc;}
+.bt-dropdown_nav_container .bt-top_social_container ul { width: 100%; padding: 10px 0; }
+.bt-dropdown_nav_container .bt-top_social_container ul li { display:inline-block;margin: 0 2.4%; text-align: center;width: 15%;}
+.bt-dropdown_nav_container .bt-top_cont{width:100%;}      
+
+.bt-dropdown_nav_container .bt-top_cont{background:#f5f5f5; width: 100%;clear:both;}
+.bt-dropdown_nav_container .bt-top_cont ul.bt-topdown{}
+.bt-dropdown_nav_container .bt-top_cont ul.bt-topdown::after{clear:both;}
+.bt-dropdown_nav_container .bt-top_cont ul.bt-topdown li{text-transform:uppercase;padding:10px;box-sizing:border-box;width:50%;float:left;border-bottom:1px solid #ccc;}
+
+.bt-dropdown_nav_container .bt-top_cont ul.bt-topdown li:nth-child(odd){border-right:1px solid #ccc;}
+.bt-dropdown_nav_container .bt-top_cont ul.bt-topdown li a{text-decoration: none; color: #333;}
+
+/*****New Css For Index Page*****/
+
+.bt_marginbtm_main{margin-bottom:32px;}   
+.businesstoday_outer_wrapper{float:left; width:100%; padding:0 2%; box-sizing:border-box;}
+
+.businesstoday_com_head{float:left; width:100%; background-color:#d7dde5; border-radius:2px 2px 0 0px; padding:0 4%; box-sizing:border-box; min-height:32px;line-height:32px;}
+.businesstoday_com_head h2{font-size:16px;float:left; color:#2b2b2b; text-transform:uppercase; font-weight:bold; display:inline;}
+.businesstoday_com_head a{font-size:14px; color:#384657; text-decoration:none; float:right;}
+
+.businesstoday_bigstory_chunk{width:100%; display:inline-block;}
+.businesstoday_bigstory_chunk .img_area{width:100%; display:inline-block; margin:11px 0 17px 0;}
+.businesstoday_bigstory_chunk .img_area img{width:100%; margin-bottom:11px;}
+.businesstoday_bigstory_chunk .img_area a{font-size:20px; line-height:24px; font-weight:bold; color:#404040;text-decoration:none;}
+
+.businesstoday_com_thumb{float:left; width:100%;}
+.businesstoday_com_thumb ul{list-style:none;}
+.businesstoday_com_thumb ul li{width:100%; float:left; font-size:15px; line-height:21px; font-weight:bold; border-top:1px solid #d5d5d5;}
+.businesstoday_com_thumb ul li a{color:#404040; text-decoration:none;}
+.businesstoday_com_thumb ul li .section{float:left; width:100%; padding:15px 0;}
+.businesstoday_com_thumb ul li .img_area{float:right; width:88px; height:65px; margin:1px 0 1px 5px;}
+.businesstoday_com_thumb ul li .img_area img{width:100%; height:100%;}
+.businesstoday_com_thumb ul li .text_area{}
+.businesstoday_com_thumb ul li .text_area p{}    
+.businesstoday_com_thumb ul li .text_area p a{display:block;font-size: 15px;line-height: 22px;font-weight: 600;    color: rgb(64, 64, 64);
+    font-family: "Open Sans", sans-serif;}        
+.businesstoday_videos_chunk{width:100%; display:block;}   
+.businesstoday_video{float:left;width:100%; background-color:#2e3192;  margin-top:1px; box-sizing:border-box;}
+
+.businesstoday_video .swiper-container{width: 100%;margin: 0 auto;overflow: hidden;position: relative;z-index: 1; padding-bottom:10%;}
+.businesstoday_video .swiper-wrapper{width:100%;}
+.businesstoday_video .swiper-container .outer_area{width:100%; float:left;}
+.businesstoday_video .swiper-container .outer_area a{position: relative;display: block;text-decoration:none;}     
+.businesstoday_video .swiper-container .outer_area img{width:100%;}
+.businesstoday_video .swiper-container .outer_area a strong{font-size:17px;display:block; line-height:23px; color:#fff; text-decoration:none; font-weight:bold; position:relative; top:10px;}
+.businesstoday_video .swiper-pagination-bullet{width:9px; height:9px;}
+.businesstoday_video .swiper-pagination-bullet-active {opacity: 1;background: #ffc90f;}
+.businesstoday_video em{background:url(http://media2.intoday.in/businesstoday/wap/2017/images/video-icon.png) no-repeat 0 0; width:33px; height:33px; position:absolute;bottom: 62px; right: 15px;}
+
+.businesstoday_topnews_chunk{width:100%; display:inline-block;}
+
+.businesstoday_markets_chunk,.businesstoday_management_chunk,.businesstoday_technology_chunk,.businesstoday_opinion_chunk,.businesstoday_fmag_chunk{width:100%; display:inline-block;}
+.businesstoday_photos_chunk{width:100%; display:block;}
+.businesstoday_photo{float:left; width:100%; background-color:#2e3192; padding:2%; margin-top:1px; box-sizing:border-box;}
+
+.businesstoday_photo .swiper-container{width: 100%;margin: 0 auto;overflow: hidden;position: relative;z-index: 1; padding-bottom:10%;}
+.businesstoday_photo .swiper-wrapper{width:100%;}
+.businesstoday_photo .swiper-container .outer_area{width:100%; float:left;}          
+.businesstoday_photo .swiper-container .outer_area img{width:100%;}
+.businesstoday_photo .swiper-container .outer_area a {position: relative;display: block;text-decoration:none;}
+.businesstoday_photo .swiper-container .outer_area a strong{font-size:17px;display:block; line-height:23px; color:#fff; text-decoration:none; font-weight:bold; position:relative; top:10px;}
+.businesstoday_photo .swiper-pagination-bullet{width:9px; height:9px;}
+.businesstoday_photo .swiper-pagination-bullet-active {opacity: 1;background: #ffc90f;}
+.businesstoday_photo em{background:url(http://media2.intoday.in/businesstoday/wap/2017/images/photo-icon.png) no-repeat 0 0; width:33px; height:33px; position:absolute; top:125px; right:10px;}
+
+
+.businesstoday_ad_chunk_horz{width:100%; display:inline-block; margin:12px 0 0px; text-align:center;}
+.businesstoday_ad_chunk{width:100%; display:inline-block; margin:22px 0 32px; text-align:center;}
+.businesstoday_ad_chunk_horz .bt-inner_ad{width:300px; margin:0 auto}
+.businesstoday_ad_chunk.bt-inner_ad{width:300px; margin:0 auto}
+
+/********************Market Chunks ****************/
+.bt-s_mark{font-size:14px;}
+.bt-s_mark a{color:#004990; text-decoration: none;display: inline-block; margin-left: 2px;}
+.bt-current_value{font-size:11px;}
+
+
+.GridDataLeft,.GridDataRight { background-color: #FFF;border-left: 1px solid #FFFEFA;border-top: 1px solid #FFF;
+    color: #233F71; line-height: 18px; font-size: 11px; border-bottom: 1px solid #C8D0DD}
+.GridDataRight { padding-right: 1px; text-align: right}
+.GridDataLeft,.MoreFromMKT,.Red { text-align: left}
+.GridDataLeft { padding-left: 1px}
+.Red {border-left: 1px solid #FFF;color: red; font-family: "Open Sans", sans-serif;font-size: 11px;padding-right: 2px
+}
+.MoreFromMKT {background-color: #F4F5F9; border-bottom: 1px solid #C8D0DD; border-top: 1px solid #C8D0DD;    color: #2E3094;
+    font-family: "Open Sans", sans-serif; font-size: 12px; line-height: 22px; padding-left: 5px}
+
+.NormalTextWhite,.NormalTextWhite_Sel {font-size: 9px;text-decoration: underline}
+.NormalTextWhite_Sel {color: #1CB272}
+.NormalTextWhite { color: #005D98}
+a.NormalTextWhite_Sel,a.NormalTextWhite_Sel:active,a.NormalTextWhite_Sel:focus,a.NormalTextWhite_Sel:link,a.NormalTextWhite_Sel:visited {
+color: #1CB272;font-size: 14px;text-decoration: underline}
+.NormalTextWhite a {color: #004990;font-family: "Open Sans", sans-serif;font-size: 14px;padding: 0 2px;text-decoration: none}
+.podcastbyline {color: #000;font: 700 11px arial; padding-left: 5px; margin-top: 3px}
+
+
+/***********************Story BT*****************************/
+.bt_wrapper_container{width:96%; margin:0 auto;border-radius:5px;box-shadow:0 0 5px #ccc; background:#fff;}
+.bt_story_container{padding:20px 10px;box-sizing: border-box; margin-bottom: 30px}
+.bt_breadcrumb{color: #959595;font-size: 12px; text-transform: uppercase; margin-bottom:10px;}
+.bt_breadcrumb a{color: #959595;font-size: 12px; text-decoration: none; }
+.bt_breadcrumb a::after{content: " | ";}
+.bt_header{}
+.bt_header .heading_bt{ font-size: 28px;line-height: 34px; margin-bottom: 10px; font-weight: bold;}
+.bt_header .bt_byline{font-size: 12px; color: #959595; margin-bottom: 10px;}
+.bt_header .bt_kicker_hd{font-size: 17px;line-height: 22px; margin-bottom: 5px;color: #777777;}
+.bt_header .bt_socials{}
+.bt_main_image{}
+.bt_main_image img.main_story_image{width:100%;}
+.bt_socials{}
+.bt_socials ul {padding:0;margin:0;list-style-type:none;width: 100%;margin: 10px 0 14px 0; float: left;}
+.bt_socials ul li { margin: 0 2.4%;  width: 15%; text-align: center; float: left;}
+.caption_text{background: #ecf0f5; margin-bottom: 30px;display: block}
+.caption_text p {font-size: 12px;line-height: 18px;padding: 8px; margin: 0; color: #333333;}
+
+.bt_story_cont_main{}
+.bt_story_cont_main .testresize{ font-size: 17px;  margin-bottom: 30px;}
+.bt_story_cont_main .testresize a{color:#000; text-decoration: none}
+.bt_story_cont_main .testresize span{ margin-right: 10px; }
+.bt_story_cont_main .testresize .small_bt{font-size: 15px;}
+.bt_story_cont_main .testresize .large_bt{ font-size: 18px; }
+
+.bt_story_cont_main .bt_hightlight{padding-bottom: 12px; border-bottom: 1px solid #dddddd;    margin-bottom: 20px;}
+.bt_story_cont_main .bt_hightlight h4{  font-size: 18px;font-weight: bold;color: #ba0e0c;  margin-bottom: 15px;text-transform: uppercase;}
+.bt_story_cont_main .bt_hightlight ul{padding-left: 22px; list-style-type: disc;}
+.bt_story_cont_main .bt_hightlight ul li{ font-size: 14px; line-height: 18px;color: #ba0e0c;margin-bottom:10px;}
+.bt_story_cont_main .bt_hightlight ul li em {font-style: normal; color: #666666;}
+
+.bt_full_story{color: #333333; line-height: 26px; font-size: 18px;
+    margin-bottom: 34px;}
+.bt_full_story p {padding:0; margin-right: 0;font-size:16px; line-height:22px;margin-bottom: 30px;}
+
+
+.getdetail {font-weight: bold;font-size: 16px;line-height: 24px; color: #333;padding: 10px 10px 10px;
+    margin-bottom: 20px; background: #fff; box-shadow: 0 0 10px #bbb8b8; border-radius: 5px; float: left;width: 100%; box-sizing: border-box;}
+.getdetail a {text-decoration: none;}
+.addcomment_area {float: left;width: 100%;margin: 7px 0 24px 0;height: 34px;}
+.addcomment_area a {float: left; width: 100%;border-radius: 6px; font: 17px;line-height: 22px;color: #fff;}
+.addcomment_area a strong {background-color: #3e75b5;text-transform: uppercase;float: left;width: 90%;text-align: center; border-radius: 5px 0px 0 5px;padding: 8px 0;}
+.addcomment_area a em {background-color: #2c5a8e; float: left;width: 10%;text-align: center; border-radius: 0px 5px 5px 0px;padding: 8px 0;font-weight: bold;font-size: 18px;}
+
+
+.next_prv_h .outer_area {width: 100%;float: left;margin: 0px;}
+.next_prv_h .nxtprev_story {border: 2px solid #003366;margin-bottom: 20px;background: #fff;    border-radius: 5px; box-sizing: border-box;}
+.next_prv_h .nxtprev_story .snext_arrow {background: url(http://media2.intoday.in/indiatoday_wap/resources/css/images/img/arrow.jpg) no-repeat 0 0;position: relative;top: 23px;
+  width: 22px;height: 34px;float: right;cursor: pointer;margin-top: 1px;}
+.next_prv_h .nxtprev_story .sprev_arrow{background:url(http://media2.intoday.in/indiatoday_wap/resources/css/images/img/arrowlft.jpg) no-repeat 5px 0; position: relative;top: 23px;
+  width: 22px;height: 34px;float: left;cursor: pointer;margin-top: 1px;}
+.next_prv_h .nxtprev_story h2 {border: 0;padding-bottom: 0;}
+.next_prv_h .nxtprev_story h2 a {font-weight: bold;color: #a60009;text-decoration: none;}
+.next_prv_h .nxtprev_story ul li a {font: 16px/19px 'Open Sans', sans-serif;    color: #003366; text-decoration: none;}
+.next_prv_h {width: 100%;float: left;padding: 0 0 2%;box-sizing: border-box;position: relative;
+  }
+.next_prv_h .nxtprev_story h2 {color: rgb(166, 0, 2);text-transform: uppercase;font: bold 16px/16px 'Open Sans', sans-serif;padding: 2%;}
+.talign {text-align: right;}
+.next_prv_h .nxtprev_story ul li { width: 100%; box-sizing: border-box; position: relative; float: left; padding: 0 2% 2%;}
+.next_prv_h .nxtprev_story ul { position: relative; list-style: none; overflow: hidden;}
+.next_prv_h .nxtprev_story.prevS ul {padding-left:30px;}
+.bt_full_story p b {line-height: 26px;font-size: 18px;font-weight: 600;}
+.bt_full_story p a {text-decoration: none; color: #024989;}
+
+.videoiframe{width:100%;}
+.videoiframe iframe{width:100%; }
+
+/***********************Video Details BT*****************************/
+.businesstoday_outer_wrapper.video_details {}
+.bt_video_details_container { padding:10px; margin-bottom:30px; border-radius:5px; box-shadow:0 0 5px #ccc; background: #fff; }
+.bt_video_details_container h1 { font-size: 20px;    line-height: 24px;    font-weight: bold;    color: #404040; padding-bottom:10px;}
+.bt_video_details_container .bt_byline {font-size:12px; color:#959595; margin-bottom:10px;}
+.bt_video_details_container .videoInfo { margin:0px; padding:0px; font-size: 16px; line-height: 22px; padding-bottom:5px;}
+.bt_video_details_container .video_main { margin:0px 0 15px 0; padding:0px; text-align:center}
+.bt_video_details_container .video_main img { width:100%}
+
+
+
+.bt_ptoto_listing_container{  }
+.bt_wrapper_container_section{width: 96%;margin: 0 auto;background: #fff;}
+.businesstoday_section_chunk{box-shadow: 0 0 5px #ccc; display: inline-block;width:100%; background:#fff}
+.businesstoday_section_chunk .businesstoday_com_thumb ul li{padding:0 10px;box-sizing: border-box;}
+.businesstoday_com_thumb ul li .section.photo_section_bt a{position: relative; display: block;} 
+.photo_icon_bt{ width:20px;height:20px;position: absolute;z-index: 99; bottom:14px; left: 10px; display: block;background: url(http://media2.intoday.in/businesstoday/wap/2017/new/images/photo-icon.png) no-repeat; background-size: 100% 100%;}
+.video_icon_bt{ width:20px;height:20px;position: absolute;z-index: 99; bottom:14px; left: 10px; display: block;
+  background: url(http://media2.intoday.in/businesstoday/wap/2017/images/video-icon.png) no-repeat; background-size: 100% 100%;}
+
+
+/*phtot show page */
+
+.photo_icon_bt{width:20px;height:20px;position: absolute;z-index: 99; bottom:14px; left: 10px; display: block;background: url("http://media2.intoday.in/indiatoday/images/photo-icon-smallx20.png") no-repeat scroll right bottom transparent; background-size: 100% 100%;}
+.bt_photo_main{margin: 0px 0 15px 0;padding: 0px;text-align: center}
+.bt_photo_section{width: 100%}
+.prev_arr{ width: 40px;height: 60px;cursor: pointer;left: 12px;position: absolute;z-index: 9999;top: 50%;transform: translateY(-50%)}
+.nxt_arr{width: 40px;height: 60px;cursor: pointer;right: 12px;position: absolute;z-index: 9999;top: 50%;transform: translateY(-50%)}
+.bt_phto_title{margin-bottom:10px}
+.photo_number{margin:7px 0px}
+.bt_photo_caption{padding: 3px 5px}
+.bt_photo_section{position:relative}
+.bt_phto_slide{position:relative}
+
+/*BT listing page css */
+
+.bt_ptoto_listing_container{   margin-bottom: 30px;}
+.bt_wrapper_container_section{width: 96%;margin: 0 auto;background: #fff;}
+.businesstoday_section_chunk{display: inline-block;border-radius: 5px;box-shadow: 0 0 5px #ccc;background: #fff;}
+.businesstoday_section_chunk .businesstoday_com_thumb ul li{padding:0 10px;box-sizing: border-box;}
+
+.bt_section_listing{margin-bottom: 10px}
+.bt_breadcrumb{font-weight: bold; font-size: 12px; margin: 0 10px 10px;}
+/* .bt_breadcrumb a:last-child::after{content:'';} */
+.bt_section_container{border-radius: none;box-shadow: none;background: none;}
+
+/*Story*/
+.storyParagraph p{ margin-top:10px;}
+.bt_main_image img{ width: 100%}
+
+@media screen and (max-width:736px){
+  .videoiframe iframe{height:414px;}
+}
+@media screen and (max-width:667px){
+  .videoiframe iframe{height:375px;}
+}
+
+@media screen and (max-width:568px){
+  .videoiframe iframe{height:320px;}
+}
+@media screen and (max-width:414px){
+  .videoiframe iframe{height:233px;}
+}
+@media screen and (max-width:412px){
+  .videoiframe iframe{height:232px;}
+}
+@media screen and (max-width:404px){
+  .videoiframe iframe{height:227px;}
+}
+@media screen and (max-width:375px){
+  .videoiframe iframe{height:211px;}
+}
+@media screen and (max-width:360px){
+  .videoiframe iframe{height:203px;}
+}
+@media screen and (max-width:320px){
+  .videoiframe iframe{height:180px;}
+}
+

@@ -1,0 +1,25 @@
+<div class="businesstoday_section_chunk bt_marginbtm_main">
+      <div class="businesstoday_com_head">
+        <h2>Section name</h2>
+        <a href="#" title="more">more »</a> </div>
+      <div class="businesstoday_com_thumb">
+        <ul>
+          <li *ngFor="let photoData of photosjsondata">
+            <div class="section photo_section_bt">
+              <div class="img_area"> 
+                  <a href="#" title="">
+                      <img src="http://media2.intoday.in/btmt/images/Photo_gallery/{{photoData.image}}" alt="" title="">
+                      <span class="photo_icon_bt"></span>  
+                  </a> 
+              </div>
+              <div class="text_area">
+                <p>
+                    <a href="gallery/{{getMyUrl(photoData.sef_url,photoData.id)}}" title="{{photoData.title}}">{{photoData.title}}</a>
+                </p>  
+              </div>
+            </div>   
+          </li>
+
+        </ul>
+      </div>
+    </div>

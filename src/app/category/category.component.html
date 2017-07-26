@@ -1,0 +1,38 @@
+
+<!--{{sectionjsondata | json}}-->
+<div class="bt_wrapper_container bt_section_container">
+  <div class="bt_section_listing">
+
+    <div class="bt_breadcrumb">
+      <a href="{{categoryBaseUrl}}">Home</a>
+       {{categoryjsondata && categoryjsondata[0].categoryTitle}}
+    </div>
+
+    <!-- section one -->
+    <div class="businesstoday_section_chunk bt_marginbtm_main">
+          <div class="businesstoday_com_head">
+            <h2>Top news</h2>
+            <a href="#" title="more">more »</a> </div>
+          <div class="businesstoday_com_thumb">
+            <ul>
+              <li *ngFor="let categoryData of categoryjsondata">
+                <div class="section">
+                  <div class="img_area"> 
+                      <a href="/story/{{getMyUrl(categoryData.sef_url,categoryData.id)}}" title="">
+                          <img src="http://media2.intoday.in/btmt/images/stories/{{categoryData.image}}" alt="" title="">
+                      </a> 
+                  </div>
+                  <div class="text_area">
+                    <p><a href="/story/{{getMyUrl(categoryData.sef_url,categoryData.id)}}" title=""> {{categoryData.title}}</a></p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+    </div>
+    
+   
+
+    </div>
+</div>

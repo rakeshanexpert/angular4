@@ -1,0 +1,43 @@
+<div class="bt_breadcrumb">
+    <a href="{{economyBaseUrl}}">Home</a> 
+</div>
+
+<div class="businesstoday_section_chunk bt_marginbtm_main">
+      <div class="businesstoday_com_head">
+        <h2>Top news</h2>
+        <a href="#" title="more">more »</a> </div>
+      <div class="businesstoday_com_thumb" *ngIf="economyjsondata">
+        <ul>
+          <li *ngFor="let economicData of economyjsondata.photos | slice:1:5;">
+            <div class="section">
+              <div class="img_area"> <a href="#" title=""><img src="http://media2.intoday.in/btmt/images/Photo_gallery/{{economicData.thumb_image}}" alt="" title=""></a> </div>
+              <div class="text_area">
+                <p><a href="#" title="7th Pay Commission: HRA 
+increases up to 17 percent 
+for central govt employees">{{economicData.Gallery_name}}</a></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+</div>
+<div class="businesstoday_section_chunk bt_marginbtm_main">
+      <div class="businesstoday_com_head">
+        <h2>Top news</h2>
+        <a href="#" title="more">more »</a> </div>
+      <div class="businesstoday_com_thumb" *ngIf="economyjsondata">
+        <ul>
+          <li *ngFor="let economicData of economyjsondata.bigStory | slice:1:5;">
+            <div class="section">
+              <div class="img_area"> <a href="#" title=""><img src="http://media2.intoday.in/btmt/images/stories/{{economicData.medium_image}}" alt="" title=""></a> </div>
+              <div class="text_area">
+                <p><a href="#" title="7th Pay Commission: HRA 
+increases up to 17 percent 
+for central govt employees">{{economicData.title}}</a></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+</div>
+
